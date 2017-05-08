@@ -1,0 +1,210 @@
+
+html,body
+{
+    background: #eee;
+    height: 100%;
+    overflow: hidden;
+}
+
+#uploadBox
+{
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #777;
+    /* margin: 120px auto; */
+    text-align: center;
+    /* line-height: 362px; */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #444;
+    overflow-y: auto;
+}
+
+#uploadBox ul li
+{
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#uploadBox  li img
+{
+    border: 1px solid #D1D1D1;
+    width: 198px;
+    height: 112px;
+    vertical-align: middle;
+}
+
+#uploadBox  li  .percentage
+{
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -34.5px;
+    margin-top: -34.5px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 69px;
+    color: #fff;
+    border-radius: 34.5px;
+    background: rgba(0, 0, 0, .8);
+}
+
+#uploadBox  li.done .percentage
+{
+    background: url("images/done.png") no-repeat 0 0;
+}
+
+#uploadBox li .progress
+{
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    background: #000;
+    opacity: .5;
+    left: 0;
+}
+
+#uploadBox  li.done .progress
+{
+    display: none;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+.hidden
+{
+    display: none;
+}
+
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+}
+
+
+::-webkit-scrollbar-button
+{
+    display: none;
+}
+
+.img-content{
+    margin: 0px;
+}
+.image-item>li>.img-content>.imgbox>img {
+    width: 100%;
+}
+
+.image-item>li>.img-content>.delete {
+    width: 28px;
+    position: absolute;
+    z-index: 999;
+    top: -12px;
+    right: -12px;
+    display: none;
+}
+
+.image-item li {
+    /* overflow: hidden; */
+    padding: 2px;
+    height: 181px;
+    border: 2px solid #999999;
+    margin: 0px 10px 25px 10px;
+    background: #fff;
+    float: left;
+    width: -moz-calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: calc(25% - 28px);
+}
+
+.image-item li.selected {
+    border-color: #f54015;
+}
+
+.image-item li.selected .delete {
+    display: block;
+    cursor: pointer;
+}
+.image-item li div{
+    width:100%;
+    overflow:hidden;
+    position: relative;
+}
+
+.image-item li .imgbox div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    padding-top: 15%;
+    color: #fff;
+    overflow: auto;
+    display: none;
+}
+
+.image-item li .imgbox:hover div {
+    display: block;
+}
+
+#imgbox {height: -moz-calc(100% - 200px);height: -webkit-calc(100% - 200px);height: calc(100% - 200px);overflow: auto;}
+.image-item {
+    padding: 25px 0;
+    width: -moz-calc(100% - 30px);
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+    margin: auto;
+    text-align:center;
+}
+
+.clear:after {content: "";display: table;clear: both;}
+.img-content{
+    color: #666;
+    overflow: visible !important;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #000;
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: #8e8e8e;
+}
+
+.image-item .imgbox {
+    height: 134px;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: #3b3b3b;
+}
+
+::-webkit-scrollbar-corner
+{
+    background-color: #535353;
+}
+
+.img-title {
+    border-top: 1px solid #999;
+}
+
+::-webkit-scrollbar-resizer
+{
+    background-color: #ff6e00;
+}
